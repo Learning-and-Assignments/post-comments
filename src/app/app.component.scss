@@ -1,0 +1,13 @@
+.pc-wrapper-block {
+    background: #FFF;
+    margin: 0 auto;
+    max-width: calc(100% - 30px);
+    min-height: 100vh;
+    padding: 2rem;
+    width: 1240px;
+
+    h1 {
+        border-bottom: 1px solid #f4f4f4;
+        padding-bottom: 1rem;
+    }
+}

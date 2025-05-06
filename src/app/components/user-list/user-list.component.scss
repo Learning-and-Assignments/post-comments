@@ -1,0 +1,39 @@
+@use '../../styles/variables' as *;
+
+.button-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.user-button {
+    border: none;
+    background-color: $blue-1;
+    color: $bg-white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    padding: .75rem 1.25rem;
+    transition: background-color 0.3s ease;
+
+    &.first {
+        margin-left: 0;
+    }
+
+    &.last {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: $blue-2;
+    }
+
+    &.active {
+        background-color: $active-btn-color;
+    }
+}
+
+.selected-user {
+    margin: 3rem 0 2rem 0;
+}

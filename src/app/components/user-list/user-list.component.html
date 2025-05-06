@@ -1,0 +1,13 @@
+<!-- <div *ngIf="loading">Loading users...</div> -->
+<app-loading-spinner *ngIf="loading"></app-loading-spinner>
+<p>Please select a user to find their posts:</p>
+<div class="button-list">
+    <button *ngFor="let user of users; let i = index" class="user-button" [class.first]="i === 0"
+        [class.last]="i === users.length - 1" (click)="selectUser(user)" [class.active]="selectedUserId === user.id">
+        {{ user.name.split(' ')[0] }}
+    </button>
+</div>
+
+<div class="selected-user" *ngIf="selectedUserName">
+    Posts from: <strong>{{ selectedUserName }}</strong>
+</div>

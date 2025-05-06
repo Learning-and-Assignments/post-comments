@@ -1,0 +1,11 @@
+@use '../../styles/variables' as *;
+
+.load-all-btn {
+    margin: 2rem .25rem;
+}
+
+.element-block {
+    background: $primary-backgrond-color;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}

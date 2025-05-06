@@ -1,0 +1,7 @@
+<!-- <div *ngIf="loading">Loading comments...</div> -->
+<app-loading-spinner *ngIf="loading"></app-loading-spinner>
+<ul>
+    <li *ngFor="let comment of comments">
+        <strong>{{ comment.name }}</strong>: {{ comment.body }}
+    </li>
+</ul>

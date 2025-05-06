@@ -1,0 +1,2 @@
+<app-user-list (userSelected)="onUserSelected($event)"></app-user-list>
+<app-post-list *ngIf="selectedUserId" [userId]="selectedUserId"></app-post-list>

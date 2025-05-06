@@ -1,0 +1,9 @@
+<!-- <div *ngIf="loading">Loading posts...</div> -->
+<app-loading-spinner *ngIf="loading"></app-loading-spinner>
+<div class="element-block" *ngFor="let post of displayedPosts">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.body }}</p>
+    <button (click)="expandPost(post.id)">Show Comments</button>
+    <app-comment-list *ngIf="expandedPostId === post.id" [postId]="post.id"></app-comment-list>
+</div>
+<button class="load-all-btn" *ngIf="!showAll && posts.length > 3" (click)="loadAll()">Load All</button>
