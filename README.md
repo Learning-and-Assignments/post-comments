@@ -70,8 +70,8 @@ start coverage/index.html
 ```
 ---
 
-## 📸 Screenshots (Optional)
-Add screenshots to demonstrate UI/UX.
+## 📸 Screenshots
+![alt text](image.png)
 
 ---
 
