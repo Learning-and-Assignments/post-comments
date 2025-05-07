@@ -33,7 +33,11 @@ export class PostListComponent implements OnChanges {
     this.showAll = true;
   }
 
-  expandPost(postId: number) {
-    this.expandedPostId = postId;
+  // expandPost(postId: number) {
+  //   this.expandedPostId = postId;
+  // }
+
+  expandPost(postId: number): void {
+    this.expandedPostId = this.expandedPostId === postId ? null : postId;
   }
 }

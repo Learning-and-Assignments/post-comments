@@ -74,6 +74,3 @@ start coverage/index.html
 ![alt text](image.png)
 
 ---
-
-## 📄 License
-MIT — free for personal or commercial use.

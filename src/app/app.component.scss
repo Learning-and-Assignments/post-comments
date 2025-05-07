@@ -1,5 +1,7 @@
+@use '../app/styles/variables' as *;
+
 .pc-wrapper-block {
-    background: #FFF;
+    background: $bg-white;
     margin: 0 auto;
     max-width: calc(100% - 30px);
     min-height: 100vh;
@@ -7,7 +9,7 @@
     width: 1240px;
 
     h1 {
-        border-bottom: 1px solid #f4f4f4;
+        border-bottom: 1px solid $primary-backgrond-color;
         padding-bottom: 1rem;
     }
 }
